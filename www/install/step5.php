@@ -47,6 +47,10 @@ if ($page->isPostBack()) {
 
 		if (!$cfg->error) {
 			$cfg->adminCheck = $user->add($cfg->ADMIN_USER, $cfg->ADMIN_FNAME, $cfg->ADMIN_LNAME, $cfg->ADMIN_PASS, $cfg->ADMIN_EMAIL, 2, '');
+<<<<<<< HEAD
+=======
+			//echo $cfg->adminCheck;
+>>>>>>> c423e970416b6802aa3f3bc4dc5e1989d66eb172
 			if (!is_numeric($cfg->adminCheck)) {
 				$cfg->error = true;
 			} else {
